@@ -77,7 +77,7 @@ function draw() {
     if(keyDown("up")) {
       platform.y=700;
       player.velocityY = -16;
-      jumpSound.play();
+     
       gameState = PLAY;
     }
   }
@@ -91,7 +91,7 @@ function draw() {
   
     if(platformGroup.isTouching(player) && player.velocityY>5) {
       player.velocityY = -16;
-       jumpSound.play();   
+      
     }
     
     if(keyDown("left"))
@@ -117,7 +117,7 @@ function draw() {
   
     if(player.y>500){
         gameState = END;
-       dieSound.play();
+ 
     }
   }
   else if (gameState === END) {
